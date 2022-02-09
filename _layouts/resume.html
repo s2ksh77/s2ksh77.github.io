@@ -54,14 +54,18 @@
 
         {% for job in site.data.experience %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <div style="display:flex; flex-direction: column;">
-            <div>
+          <div style="display:flex; flex-direction: row;">
+            <div style="width:40%">
               <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
               <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
               <p class="resume-item-copy">{{ job.summary }}</p>
             </div>
             <div>
-              <span>여기가 설명</span>
+              <ul class="resume-item-list">
+                {% for job in job.descriptions %}
+                <li>{{ job.description }}</li>
+                {% endfor %}
+              </ul>
             </div>
           </div>
         </div><!-- end of resume-item -->
