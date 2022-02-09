@@ -24,15 +24,15 @@ resume_header_contact_info: "경기도 수원시 거주 • 010-7413-8388 • s2
 display_header_contact_info: "false"
 
 resume_header_intro: "
-      안녕하세요. React / JavaScript 웹 개발자 김수현 입니다.
+      안녕하세요. React / JavaScript 웹 개발자 김수현 입니다. </br>
 
-      React, JavaScript, Mobx, node.js, GIT 등의 기술을 사용하여 
+      React, JavaScript, Mobx, node.js, GIT 등의 기술을 사용하여 </br>
 
       효율적인 비즈니스 로직 및 서비스 별 렌더링 최적화와 함께
 
-      안정적인 서비스 제공을 목표로 하는 개발자 입니다.
+      안정적인 서비스 제공을 목표로 하는 개발자 입니다. </br>
 
-      현재 TmaxWAPL 이라는 업무 협업 웹 어플리케이션에서 'Note' 모듈의 FrontEnd / BackEnd를 담당하고 있습니다.
+      현재 TmaxWAPL 이라는 업무 협업 웹 어플리케이션에서 'Note' 모듈의 FrontEnd / BackEnd를 담당하고 있습니다. </br>
 
       BackEnd ( 회사 제품 : Spring 기반 프레임워크 ProObject, Tibero, Spring Boot )
 "
