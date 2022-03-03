@@ -1,19 +1,22 @@
 # Jobs
-# VP of Global Communications
-- company: Springfield International Human Rights Outreach
-  position: VP of Global Communications
-  duration: Oct, 2013 &mdash; Present
-  summary: Write about your core competencies in one or two sentences describing your position. If you held the position for a long time, it could be a longer section, including a couple bullet points	<ul class="resume-item-list"><li>A project you are proud of</li><li>Another awesome project</li><li>or a team or department you worked with</li></ul>
-  discriptions: ["1번", "2번", "3번"]
 
-# Director of Digital Stratgy
-- company: United Nations Human Rights Council
-  position: Director of Digital Strategy
-  duration: Jun, 2010 &mdash; Sept, 2013
-  summary: If your stint was shorter, feel free to be brief and just call out the most meaningful points of your role. Be concise, and be meaninful. The person reading just needs enough to want to talk to you more about your experience.
+- company: Tmax WAPL
+  position: WAPL (커뮤니케이션 기반 협업 플랫폼) Note 모듈 개발
+  duration: 2019.01 ~ (현재)
+  summary: <ul class="resume-item-list">
+    <li>React & Mobx 기반 노트 모듈 개발</li>
+    <li>MobX를 사용한 스토어 및 Repository 디자인</li>
+    <li>노트 모듈과 관련된 각종 Component 개발</li>
+    <li>ProObject 및 Spring Boot를 이용한 rest API 사용하여 CRUD 구축</li>
+    <li>DB 스키마 설계</li>
+    </ul>
 
-# Communications Coordinator
-- company: Springfield Women & Children's Center
-  position: Communications Coordinator
-  duration: Jun, 2008  &mdash; May, 2010
-  summary: Led communication efforts across digital and traditional media channels for marketing and public relations, internal communication strategies, and coordinated support programs for the recipients of the center's services.
+- company: Tmax Soft
+  position: AnyLink6 Web Admin 유지 보수 & AnyLink7 Web Admin 개발
+  duration: 2017.01 ~ 2018.12
+  summary: <ul class="resume-item-list">
+    <li>JavaScript 및 jQuery 기반 jsp admin 페이지 유지 보수</li>
+    <li>adapter 별 통신 프로토콜 사용성 개선 및 신규 비즈니스 로직 구현</li>
+    <li>대구은행 제품 유치를 위한 상주 및 고객사 요구사항 반영</li>
+    <li>ProObject (사내 Spring 기반 제품) rest API 사용하여 CRUD 구축</li>
+    </ul>
