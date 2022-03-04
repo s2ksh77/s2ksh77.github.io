@@ -55,9 +55,14 @@
         {% for job in site.data.experience %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
           <div style="display:flex; flex-direction: row;">
-            <div style="width:50%">
+            <div style="width:30%">
               <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
-              <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+              <h4 class="resume-item-details" itemprop="description">{{ job.position }}</h4>
+              <h4 class="resume-item-details" itemprop="description">{{ job.position2 }}</h4>
+              <p style="font-size:14px;"> {{ job.duration }}</p>
+              {% if job.site %}
+                <a href="{{ job.site }}" itemprop="url" target='_blank'>Site</a>
+              {% endif %}
             </div>
             <div>
               <p class="resume-item-copy">{{ job.summary }}</p>
@@ -70,6 +75,23 @@
       <!-- end Experience -->
       {% endif %}
 
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Skills</h2>
+        </header>
+        <div style="display: grid; grid-template-columns: 250px 250px 250px; grid-template-rows: 50px 50px;">
+          {% for skill in site.data.skills %}
+            <div>
+              <h4 class="resume-item-details">{{ skill.skill }}</h4>
+              <p class="resume-item-copy">{{ skill.description }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+      <!-- end Skills -->
+      {% endif %}
 
       {% if site.resume_section_education %}
       <!-- begin Education -->
@@ -103,15 +125,16 @@
       <!-- begin Projects -->
       <section class="content-section">
         <header class="section-header">
-          <h2>Projects</h2>
+          <h2>Toy Projects</h2>
         </header>
 
         {% for project in site.data.projects %}
         <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
           <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
           <h3 class="resume-item-title" itemprop="name">{% if project.url %}<a href="{{ project.url }}" itemprop="url">{{ project.project }}</a>{% else %}{{ project.project }}{% endif %}</h3>
-          <h4 class="resume-item-details" itemprop="description">{{ project.role }}  &bull; {{ project.duration }}</h4>
+          <h4 class="resume-item-details" itemprop="description">{{ project.role }} {{ project.duration }}</h4>
           <p class="resume-item-copy">{{ project.description }}</p>
+          <div class="resume-item-copy">{{ project.description2 }}</div>
         </div>
         {% endfor %}
 
@@ -119,27 +142,9 @@
       <!-- end Projects -->
       {% endif %}
 
-      {% if site.resume_section_skills %}
-      <!-- begin Skills -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
-        {% for skill in site.data.skills %}
-        <div class="resume-item">
-          <h4 class="resume-item-details">{{ skill.skill }}</h4>
-          <p class="resume-item-copy">{{ skill.description }}</p>
-        </div>
-        {% endfor %}
-
-      </section>
-      <!-- end Skills -->
-      {% endif %}
-
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
-      <section class="content-section">
+      <!-- <section class="content-section">
 
         <header class="section-header">
           <h2>Recognition</h2>
@@ -153,13 +158,13 @@
         </div>
         {% endfor %}
 
-      </section>
+      </section> -->
       <!-- end Recognition -->
       {% endif %}
 
       {% if site.resume_section_associations %}
       <!-- begin Associations -->
-      <section class="content-section">
+      <!-- <section class="content-section">
 
         <header class="section-header">
           <h2>Associations</h2>
@@ -173,13 +178,13 @@
         </div>
         {% endfor %}
 
-      </section>
+      </section> -->
       <!-- end Associations -->
       {% endif %}
 
       {% if site.resume_section_interests %}
       <!-- begin Interests -->
-      <section class="content-section">
+      <!-- <section class="content-section">
 
         <header class="section-header">
           <h2>Outside Interests</h2>
@@ -193,13 +198,13 @@
           </ul>
         </div>
 
-      </section>
+      </section> -->
       <!-- end Interests -->
       {% endif %}
 
       {% if site.resume_section_links %}
       <!-- begin Links -->
-      <section class="content-section">
+      <!-- <section class="content-section">
 
         <header class="section-header">
           <h2>Additional Links</h2>
@@ -213,13 +218,13 @@
           </ul>
         </div>
 
-      </section>
+      </section> -->
       <!-- end Links -->
       {% endif %}
 
-      {% if site.resume_print_social_links %}
+      <!-- {% if site.resume_print_social_links %} -->
       <!-- begin Print Social Links -->
-      <section class="content-section print-only">
+      <!-- <section class="content-section print-only">
 
         <header class="section-header">
           <h2>Social Links</h2>
@@ -229,13 +234,12 @@
         {% include print-social-links.html %}
         </div>
 
-      </section>
+      </section> -->
       <!-- end Print Social Links -->
-      {% endif %}
+      <!-- {% endif %} -->
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
-        <p class="footer-line">If this is your live resume, you can modify or remove this part. ;-)</p>
+        <p class="footer-line">Made by @s2ksh77. Can you see my <a href="https://github.com/s2ksh77">GitHub</a>.</p>
       </footer>
 
     </div>

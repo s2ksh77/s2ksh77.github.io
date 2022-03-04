@@ -2,11 +2,24 @@
 
 - project: WeTube
   role: node.js, mongo db, pug, webpack, scss
-  description: 유튜브 클론 코딩
+  description: 유튜브 클론 코딩 (웹)
+  description2: <ul class="resume-item-list">
+    <li class="custom-li">node.js의 Express로 서버 구현, mongo db 사용</li>
+    <li class="custom-li">로그인 및 회원가입 페이지 기능 구현</li>
+    <li class="custom-li">프로필 수정 페이지 기능 구현</li>
+    <li class="custom-li">동영상 업로드 및 플레이어 기능 구현</li>
+    </ul>
 
 - project: InstaClone
   role: node.js, graph-ql, apollo-client, react-hooks, prisma, react-native, expo
-  description: 인스타그램 클론 코딩
+  description: 인스타그램 클론 코딩 (앱)
+  description2: <ul class="resume-item-list">
+    <li class="custom-li">ApolloServer 와 graph-ql 사용</li>
+    <li class="custom-li">db prisma 스키마 정의</li>
+    <li class="custom-li">로그인 및 회원가입 기능 구현</li>
+    <li class="custom-li">Feed 업로드 및 수정 기능 구현</li>
+    <li class="custom-li">팔로우/언팔로우 기능 구현</li>
+    </ul>
 
 - project: 당근 마켓 클론 코딩 (예정 중)
   description: 당근 마켓 클론 코딩 (예정 중)

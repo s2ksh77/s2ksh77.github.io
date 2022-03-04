@@ -1,22 +1,27 @@
 # Jobs
 
 - company: Tmax WAPL
-  position: WAPL (커뮤니케이션 기반 협업 플랫폼) Note 모듈 개발
+  position: WAPL 노트 앱 개발
   duration: 2019.01 ~ (현재)
+  site: https://tmax.wapl.ai/
   summary: <ul class="resume-item-list">
-    <li>React & Mobx 기반 노트 모듈 개발</li>
-    <li>MobX를 사용한 스토어 및 Repository 디자인</li>
-    <li>노트 모듈과 관련된 각종 Component 개발</li>
-    <li>ProObject 및 Spring Boot를 이용한 rest API 사용하여 CRUD 구축</li>
-    <li>DB 스키마 설계</li>
+    <li class="custom-li">커뮤니케이션 기반 협업 플랫폼 노트 앱 개발</li>
+    <li class="custom-li">MobX를 사용하여 컴포넌트에 따른 스토어 및 Repository 디자인</li>
+    <li class="custom-li">재사용이 필요한 컴포넌트들 hook 적용하여 구현</li>
+    <li class="custom-li">TinyMCE 에디터 사용하여 custom 에디터 구현</li>
+    <li class="custom-li">ProObject 및 Spring Boot를 이용한 rest API 사용하여 CRUD 구현</li>
+    <li class="custom-li">DB 스키마 설계</li>
+    <li class="custom-li">모바일 노트 앱 유지보수</li>
     </ul>
 
 - company: Tmax Soft
-  position: AnyLink6 Web Admin 유지 보수 & AnyLink7 Web Admin 개발
+  position: AnyLink6 Admin 유지 보수
+  position2: AnyLink7 Admin 개발
   duration: 2017.01 ~ 2018.12
   summary: <ul class="resume-item-list">
-    <li>JavaScript 및 jQuery 기반 jsp admin 페이지 유지 보수</li>
-    <li>adapter 별 통신 프로토콜 사용성 개선 및 신규 비즈니스 로직 구현</li>
-    <li>대구은행 제품 유치를 위한 상주 및 고객사 요구사항 반영</li>
-    <li>ProObject (사내 Spring 기반 제품) rest API 사용하여 CRUD 구축</li>
+    <li class="custom-li">JavaScript 및 jQuery 기반 jsp admin 페이지 유지 보수</li>
+    <li class="custom-li">사이트 제품 유치를 위한 상주 및 고객사 요구사항 반영</li>
+    <li class="custom-li">회사 프레임워크 TOP 사용하여 UI/UX 문서에 따른 Admin 페이지 구현</li>
+    <li class="custom-li">페이지 별 restAPI data 연동</li>
+    <li class="custom-li">ProObject (사내 Spring 기반 제품) rest API 사용하여 CRUD 서비스 구현</li>
     </ul>
